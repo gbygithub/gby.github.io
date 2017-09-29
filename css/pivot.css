@@ -1,0 +1,276 @@
+.pvtUi { 
+    color: #333;
+    /*cdh*/
+    table-layout:fixed;
+    width: 100%;
+}
+/*cdh*/
+.pvtUi td:nth-of-type(1){
+    width: 10%;
+}
+
+table.pvtTable {
+    font-size: 8pt;
+    text-align: left;
+    border-collapse: collapse;
+}
+table.pvtTable thead tr th, table.pvtTable tbody tr th {
+    background-color: #e6EEEE;
+    border: 1px solid #CDCDCD;
+    font-size: 8pt;
+    padding: 5px;
+}
+
+table.pvtTable .pvtColLabel {
+    text-align: center;
+    /*cdh*/
+    min-width: 3em;
+}
+table.pvtTable .pvtTotalLabel {text-align: right;}
+
+table.pvtTable tbody tr td {
+    color: #3D3D3D;
+    padding: 5px;
+    background-color: #FFF;
+    border: 1px solid #CDCDCD;
+    vertical-align: top;
+    text-align: right;
+}
+
+.pvtTotal, .pvtGrandTotal { font-weight: bold; }
+
+.pvtVals { 
+    /*text-align: center;*/
+    /*cdh*/
+    text-align: left;
+}
+.pvtAggregator { margin-bottom: 5px ;}
+
+.pvtAxisContainer, .pvtVals {
+    border: 1px solid gray;
+    background: #EEE;
+    padding: 5px;
+    min-width: 20px;
+    min-height: 20px;
+}
+.pvtAxisContainer li {
+    padding: 8px 6px;
+    list-style-type: none;
+    cursor:move;
+   
+}
+.pvtAxisContainer.pvtHorizList li{
+    /*cdh*/
+    float: left;
+}
+.pvtAxisContainer li.pvtPlaceholder {
+    -webkit-border-radius: 5px;
+    padding: 3px 15px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px dashed #aaa;
+}
+
+.pvtAxisContainer li span.pvtAttr {
+    -webkit-text-size-adjust: 100%;
+    background: #F3F3F3;
+    border: 1px solid #DEDEDE;
+    padding: 2px 5px;
+    white-space:nowrap;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.pvtTriangle {
+    cursor:pointer;
+    color: grey;
+}
+
+.pvtHorizList li { display: inline; }
+.pvtVertList { vertical-align: top; }
+
+.pvtFilteredAttribute { font-style: italic }
+
+.pvtFilterBox{
+    z-index: 100;
+    width: 280px;
+    border: 1px solid gray;
+    background-color: #fff;
+    position: absolute;
+    padding: 20px;
+    text-align: center;
+}
+
+.pvtFilterBox h4{ margin:0; }
+.pvtFilterBox p { margin: 1em auto; }
+.pvtFilterBox label { font-weight: normal; }
+.pvtFilterBox input[type='checkbox'] { margin-right: 5px; }
+
+.pvtCheckContainer{
+    text-align: left;
+    overflow: scroll;
+    width: 100%;
+    max-height: 200px;
+}
+.pvtCheckContainer p{ margin: 5px; }
+
+.pvtRendererArea { 
+    padding: 5px;
+    /*cdh */
+    display: block;
+    overflow: auto;
+}
+
+/* c3-css */
+.c3 svg {
+    font:10px sans-serif;
+    -webkit-tap-highlight-color:transparent
+}
+.c3 line,.c3 path {
+    fill:none;
+    stroke:#000
+}
+.c3 text {
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    user-select:none
+}
+.c3-bars path,.c3-event-rect,.c3-legend-item-tile,.c3-xgrid-focus,.c3-ygrid {
+    shape-rendering:crispEdges
+}
+.c3-chart-arc path {
+    stroke:#fff
+}
+.c3-chart-arc text {
+    fill:#fff;
+    font-size:13px
+}
+.c3-grid line {
+    stroke:#aaa
+}
+.c3-grid text {
+    fill:#aaa
+}
+.c3-xgrid,.c3-ygrid {
+    stroke-dasharray:3 3
+}
+.c3-text.c3-empty {
+    fill:gray;
+    font-size:2em
+}
+.c3-line {
+    stroke-width:1px
+}
+.c3-circle._expanded_ {
+    stroke-width:1px;
+    stroke:#fff
+}
+.c3-selected-circle {
+    fill:#fff;
+    stroke-width:2px
+}
+.c3-bar {
+    stroke-width:0
+}
+.c3-bar._expanded_ {
+    fill-opacity:.75
+}
+.c3-target.c3-focused {
+    opacity:1
+}
+.c3-target.c3-focused path.c3-line,.c3-target.c3-focused path.c3-step {
+    stroke-width:2px
+}
+.c3-target.c3-defocused {
+    opacity:.3!important
+}
+.c3-region {
+    fill:#4682b4;
+    fill-opacity:.1
+}
+.c3-brush .extent {
+    fill-opacity:.1
+}
+.c3-legend-item {
+    font-size:12px
+}
+.c3-legend-item-hidden {
+    opacity:.15
+}
+.c3-legend-background {
+    opacity:.75;
+    fill:#fff;
+    stroke:#d3d3d3;
+    stroke-width:1
+}
+.c3-title {
+    font:14px sans-serif
+}
+.c3-tooltip-container {
+    z-index:10
+}
+.c3-tooltip {
+    border-collapse:collapse;
+    border-spacing:0;
+    background-color:#fff;
+    empty-cells:show;
+    -webkit-box-shadow:7px 7px 12px -9px #777;
+    -moz-box-shadow:7px 7px 12px -9px #777;
+    box-shadow:7px 7px 12px -9px #777;
+    opacity:.9
+}
+.c3-tooltip tr {
+    border:1px solid #CCC
+}
+.c3-tooltip th {
+    background-color:#aaa;
+    font-size:14px;
+    padding:2px 5px;
+    text-align:left;
+    color:#FFF
+}
+.c3-tooltip td {
+    font-size:13px;
+    padding:3px 6px;
+    background-color:#fff;
+    border-left:1px dotted #999
+}
+.c3-tooltip td>span {
+    display:inline-block;
+    width:10px;
+    height:10px;
+    margin-right:6px
+}
+.c3-tooltip td.value {
+    text-align:right
+}
+.c3-area {
+    stroke-width:0;
+    opacity:.2
+}
+.c3-chart-arcs-title {
+    dominant-baseline:middle;
+    font-size:1.3em
+}
+.c3-chart-arcs .c3-chart-arcs-background {
+    fill:#e0e0e0;
+    stroke:none
+}
+.c3-chart-arcs .c3-chart-arcs-gauge-unit {
+    fill:#000;
+    font-size:16px
+}
+.c3-chart-arcs .c3-chart-arcs-gauge-max,.c3-chart-arcs .c3-chart-arcs-gauge-min {
+    fill:#777
+}
+.c3-chart-arc .c3-gauge-value {
+    fill:#000
+}
+
+.c3-line, .c3-focused {stroke-width: 3px !important;}
+        .c3-bar {stroke: white !important; stroke-width: 1;}
+        .c3 text { font-size: 12px; color: grey;}
+        .tick line {stroke: white;}
+        .c3-axis path {stroke: grey;}
+        .c3-circle { opacity: 1 !important; }

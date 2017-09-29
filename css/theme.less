@@ -1,0 +1,101 @@
+@import "variables.less";
+
+
+.bg-color(@color:@bg-color){
+    background-color: @color;
+}
+.text-color(@color:@text-color){
+    color:@color;
+}
+.bg@{name}{
+    .text-color;
+    .bg-color;
+    &.lt {
+        .bg-color(lighten(@bg-color, 6.4%))!important;} 
+    &.dk {
+       .bg-color(darken(@bg-color, 5.9%))!important;}
+    &.bg {
+        .bg-color!important;}
+    .bg {
+        .bg-color;}
+    .dk {
+        .bg-color(darken(@bg-color, 5.9%));}
+    .lt {
+        .bg-color(lighten(@bg-color, 6.4%));}
+    a{
+        color: @a-color;}
+    a:hover{
+        color:(@a-hover-color);}
+    .text-dk {
+        color: (darken(@a-color, 80%));}
+    .text-lt {
+        color: (lighten(@a-color, 20%));}
+    .text-muted {
+        color: @a-text-muted-color}
+    .dropdown-menu {
+        border-color: @bg-color;}
+    .nav>li>a {
+        color: @a-color;}
+    .nav>li:hover,
+    .nav>li:focus,
+    .nav>li>a:hover,
+    .nav>li>a:focus,
+    .nav>li.active>a {
+        color: (@a-hover-color);
+        .bg-color(lighten(@bg-color, 1.6%));}
+    .nav .open>a {
+        .bg-color(darken(@bg-color, 5.9%));}
+}
+a.bg@{name}{
+    color: @a-color;
+    &:hover{
+        color:(@a-hover-color);
+        .bg-color(darken(@bg-color, 5%));
+    }
+}
+a.text@{name}:hover{
+    color:darken(@bg-color, 5%);
+}
+.text@{name}{
+    color:@bg-color;
+}
+.text@{name}-lt{
+    color:lighten(@bg-color, 5%);
+}
+.text@{name}-dk{
+    .bg-color(darken(@bg-color, 5%));
+}
+
+
+.b@{name}{
+    border-color:@bg-color;
+}
+.b-t@{name}{
+    border-top-color: @bg-color;
+}
+.b-r@{name}{
+    border-right-color: @bg-color;
+}
+.b-b@{name}{
+    border-bottom-color: @bg-color;
+}
+.b-l@{name}{
+    border-left-color: @bg-color;
+}
+
+
+.b-@{border-width}{
+    border-right: @border-width solid @border-color;
+}
+.b-t-@{border-width}{
+    border-top: @border-width solid @border-color;
+}
+.b-r-@{border-width}{
+    border-right: @border-width solid @border-color;
+}
+.b-b-@{border-width}{
+    border-bottom: @border-width solid @border-color;
+}
+.b-l-@{border-width}{
+    border-left: @border-width solid @border-color;
+}

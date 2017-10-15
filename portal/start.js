@@ -2,17 +2,17 @@
 require.config({
     waitSeconds: 20,
     paths: {
-//  		'app':'../portal/app',
         'angular': '../libs/angular',
         'ocLazyLoad': '../libs/ocLazyLoad.require',
         'ngStorage': '../libs/ngStorage',
         'materialize':'../libs/materialize.min',
-        'personindex':'../libs/personal/index',
         'ui-router': '../libs/angular-ui-router',
         'bootstrap': '../libs/bootstrap.min',
         'ui-bootstrap': '../libs/ui-bootstrap-tpls-1.3.1',
         'ui-grid': '../libs/ui-grid',
         'jquery': '../libs/jquery-2.2.1',
+         'jquery-min': '../libs/jquery.min',
+        
         'ztree': '../libs/jquery.ztree.all',
         'config': 'config',
         'layer': '../libs/layer/layer',
@@ -115,7 +115,7 @@ require.config({
         'eca-wxLogin':'../forPhone/login/wxlogin'
     },
     shim: {
-        'app': ['jquery', 'css!../css/bootstrap.css', 'css!../css/bootstrap-rewrite.css', 'css!../css/icon-eca.css', 'css!../css/common.css', 'css!../css/app.css', 'css!../css/materialize.css' ,'css!../css/personal/style.css','css!../css/personal/styleIndex.css'],
+        'app': ['jquery-min', 'css!../css/bootstrap.css', 'css!../css/bootstrap-rewrite.css', 'css!../css/icon-eca.css', 'css!../css/common.css', 'css!../css/app.css', 'css!../css/materialize.css' ,'css!../css/personal/style.css'],
         'eca-grid': ['css!../css/cautionlight.css'],
         'ocLazyLoad': ['angular'],
         'ngStorage': ['angular'],

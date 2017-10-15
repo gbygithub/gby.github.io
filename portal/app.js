@@ -1,4 +1,4 @@
-define(['jquery', 'angular', 'ocLazyLoad', 'ui-router', 'bootstrap','ui-bootstrap','ngStorage', 'zh-cn'], function() {
+define(['jquery', 'angular', 'ocLazyLoad', 'ui-router', 'bootstrap','ui-bootstrap','ngStorage', 'zh-cn','materialize'], function() {
 	// 定义 angular 模块
 	var app = angular.module('portal.app', ['oc.lazyLoad', 'ui.router','ngStorage', 'ui.bootstrap']);
 	app.controller("ctr_app", ['$scope',

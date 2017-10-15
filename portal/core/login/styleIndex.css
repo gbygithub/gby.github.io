@@ -113,10 +113,10 @@ nav .brand-logo{
 **/
 @keyframes change{
     from{
-        background:skyblue url(../img/aircraft.png) no-repeat -200px 200px;
+        background:skyblue url(../../../img/aircraft.png) no-repeat -200px 200px;
     }
     to{
-        background:black url(../img/aircraft.png) no-repeat 2000px -100px;
+        background:black url(../../../img/aircraft.png) no-repeat 2000px -100px;
     }
 }
 @keyframes one{

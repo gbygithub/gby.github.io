@@ -16,7 +16,7 @@ define([], function() {
         });
     });
     // 菜单
-    $('.outside div').each(function(index){
+    $('.outside div').each(function(index){      
         $(this).css('transition','1s all ease '+($('.outside div').length-1)*300+'ms');
         $(this).css('transform','rotateY('+360/$('.outside div').length*index+'deg) rotateX(0deg) translateZ(350px)');
         var speed=200;//滑动的速度

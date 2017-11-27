@@ -20,11 +20,11 @@ define([], function() {
 					var speed = 200; //滑动的速度
 					$(this).click(function() {
 						if(index == 0) {
-							window.location.reload();
+							window.location.href='conponents/game/gameIndex.html'; 
 						} else {
-							$('body,html').animate({
-								scrollTop: $(window).height() * index
-							}, speed);
+//							$('body,html').animate({
+//								scrollTop: $(window).height() * index
+//							}, speed);
 							return false;
 						}
 					});
@@ -98,9 +98,9 @@ define([], function() {
 
 				
 				// 影集点击跳转
-				$('#fifthPage .content').click(function() {
-//					      window.location.href='main.html'; 
-				})
+//				$('#fifthPage .content').click(function() {
+////					      window.location.href='main.html'; 
+//				})
 			});
 
 		}

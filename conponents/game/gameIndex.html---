@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>纯js图片碎片轮播图切换效果|DEMO_jQuery之家-自由分享jQuery、html5、css3的插件库</title>
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="../css/htmleaf-demo.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+	<div class="htmleaf-container">
+		<!--<header class="htmleaf-header">
+			<h1>纯js图片碎片轮播图切换效果</h1>
+			<div class="htmleaf-links">
+				<a class="htmleaf-icon icon-htmleaf-home-outline" href="http://www.htmleaf.com/" title="jQuery之家" target="_blank"><span> jQuery之家</span></a>
+				<a class="htmleaf-icon icon-htmleaf-arrow-forward-outline" href="http://www.htmleaf.com/jQuery/Slideshow-Scroller/201711074815.html" title="返回下载页" target="_blank"><span> 返回下载页</span></a>
+			</div>
+		</header>-->
+		<div class="banner" id="banner1" style="margin: 50px auto;">
+			<div class="banner-view"></div>
+			<div class="banner-btn"></div>
+			<div class="banner-number"></div>
+			<div class="banner-progres"></div>
+		</div>
+
+		<!--<div class="banner" id="banner2" style="margin: 50px auto;">
+			<div class="banner-view"></div>
+			<div class="banner-btn"></div>
+			<div class="banner-number"></div>
+			<div class="banner-progres"></div>
+		</div>-->
+		<!--<div class="related">
+		    <h3>如果你喜欢这个插件，那么你可能也喜欢:</h3>
+		    <a href="http://www.htmleaf.com/jQuery/Slideshow-Scroller/201709144739.html">
+			  <img src="related/1.jpg" width="300" alt="jQuery和CSS3超酷3D立方体轮播图插件"/>
+			  <h3>jQuery和CSS3超酷3D立方体轮播图插件</h3>
+			</a>
+			<a href="http://www.htmleaf.com/jQuery/Slideshow-Scroller/201706144573.html">
+			  <img src="related/2.jpg" width="300" alt="纯js百叶窗效果轮播图插件"/>
+			  <h3>纯js百叶窗效果轮播图插件</h3>
+			</a>
+		</div>-->
+	</div>
+	
+	<script type="text/javascript" src="game-main.js"></script>
+	<script type="text/javascript">
+		var banner = new FragmentBanner({
+			container : "#banner1",//选择容器 必选
+			imgs : ['images/1.jpg','images/2.jpg','images/3.jpg','images/4.jpg','images/5.jpg'],//图片集合 必选
+			size : {
+				width : 1000,
+				height : 560
+			},//容器的大小 可选
+			//行数与列数 可选
+			grid : {
+				line : 12,
+				list : 14
+			},
+			index: 0,//图片集合的索引位置 可选
+			type : 2,//切换类型 1 ， 2 可选
+			boxTime : 5000,//小方块来回运动的时长 可选
+			fnTime : 10000//banner切换的时长 可选
+		});
+			
+		/*
+		** 只填两个必要参数也是可以的
+		*/
+		var banenr2 = new FragmentBanner({
+			container : "#banner2",//选择容器 必选
+			imgs : ['images/1.jpg','images/2.jpg','images/3.jpg','images/4.jpg','images/5.jpg'],//图片集合 
+		});
+	</script>
+</body>
+</html>
